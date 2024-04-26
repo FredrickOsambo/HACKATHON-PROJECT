@@ -1,0 +1,24 @@
+<!-- templates/about.html -->
+
+{% extends 'main.html' %}
+
+{% block title %}Upcoming Professionals{% endblock %}
+
+{% block content %}
+
+<div class="h4 pb-2 mb-4 text-primary border-bottom border-primary">
+  Compitent Student
+</div>
+
+<div class= "general">
+
+  <div class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end --bs-info-bg-subtle .text-light">
+    {{name}}
+
+    <br><br><br>
+
+    <button class="btn btn-primary" onclick="location.reload();">
+      <i class="fas fa-sync-alt"></i> Next upcoming professional
+    </button>
+  </div>
+{% endblock %}

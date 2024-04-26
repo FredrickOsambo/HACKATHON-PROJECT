@@ -1,0 +1,49 @@
+<!-- templates/home.html -->
+
+{% extends 'main.html' %}
+
+{% block title %}Home - My Django Project{% endblock %}
+
+{% block content %}
+
+<div class="home">
+      <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3 container p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
+        <a class="navbar-brand" href="#">Beautiful undiscovered resources</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'dog' %}">Cute dogs</a>
+          </li>
+          <li class="nav-item">
+            <a class= "nav-link" href="{% url 'facts' %}">Did you know</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'students' %}">Upcoming Professional</a>
+          </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+        <h4 id="scrollspyHeading1">Cute dogs</h4>
+        <p>Embark on an enchanting journey into the world of adorable pups! Our website offers a delightful array of breeds, heartwarming stories, and expert tips for dog enthusiasts. Whether you're seeking companionship or canine cuteness, you'll find it all right here, waiting to brighten your day!
+        
+      </p>
+        <a class="btn btn-primary" href="{% url 'dog' %}" role="button">Let's see the stunning dogs</a>
+        <h4 id="scrollspyHeading2">Did you know</h4>
+        <p>Ignite your curiosity with a treasure trove of mind-bending facts and fascinating trivia! Dive deep into the mysteries of the universe and uncover secrets that will leave you astounded. With each click, our platform promises to expand your knowledge and ignite your sense of wonder!
+      </p>
+      
+        <a class="btn btn-primary" href="{% url 'facts' %}" role="button">Show me</a>
+      
+        
+        <h4 id="scrollspyHeading3">Meet future professionals</h4>
+        <p>Are you ready to take the next step in your career journey? Our platform is your gateway to success, offering expert advice, invaluable resources, and empowering insights for young professionals. From resume building to networking strategies, we're here to support you every step of the way as you embark on your path to greatness!</p>
+        <a class="btn btn-primary" href="{% url 'students' %}" role="button">Let's behold</a>
+      
+      </div>
+      
+      
+      
+    
+</div>
+{% endblock %}

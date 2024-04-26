@@ -1,0 +1,21 @@
+<!-- templates/about.html -->
+
+{% extends 'main.html' %}
+
+{% block title %}Stunning Dogs{% endblock %}
+
+{% block content %}
+<div class="h4 pb-2 mb-4 text-primary border-bottom border-primary">
+  Cute dogs
+</div>
+<div class="card-background">
+  <div class="card container" style="width: 25rem; align-items: center; justify-content: center;">
+     <img src="{{dog}}" class="card-img-top" alt="...">
+   </div>
+  <div class="container mt-5">
+    <button class="btn btn-primary" onclick="location.reload();">
+      <i class="fas fa-sync-alt"></i> More cute dogs
+    </button>
+  </div>
+</div>
+{% endblock %}

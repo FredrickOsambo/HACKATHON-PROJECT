@@ -1,0 +1,133 @@
+h1{
+    color: #0d6efd;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-top: 3rem;
+}
+/* Navbar styles */
+.navbar ul{
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0.4rem;
+    background-color: #0cc7d4;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #000;
+    padding : 15px;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+a.navbar li :hover{
+  background-color: #009dff
+  transform: translateY(-3px);
+}
+
+
+}
+.container-fluid {
+  width:100px;
+  height:100px;
+  border-radius: 10px;
+  border: solid 10px;
+  border-color:black;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(pink, blue)
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; 
+  position: relative;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.factbock{
+  display: flex;
+  justify-content: center;
+  border-radius: 15px;
+  align-items: center;
+  background-color:#0cc7d4;
+  border-left: solid black 30px;
+  height: 300px; /* Adjust as needed */
+  width: 900px; /* Adjust as needed */
+}
+.name{
+  display: flex;
+  justify-content: center;
+  background-color:#0cc7d4;
+  align-items: center;
+  border-left: solid black 30px;
+  height: 100px; /* Adjust as needed */
+}
+/* Apply linear gradient background to the body */
+body {
+    /* Linear gradient from top to bottom */
+    background: linear-gradient(to bottom right, black, #e31ee6, #0cc7d4);
+    margin-top: 0;
+}
+.general{
+  height:400px;
+  
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+ }
+
+.typewriter h1 {
+  overflow: hidden;
+  border-right: .15em solid; 
+  white-space: nowrap; 
+  animation: typing 4s steps(40) forwards; 
+ }
+.container mt-5{
+  position: relative;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #333; /* Navbar link color */
+  transition: color 0.3s, transform 0.3s; /* Smooth transition effect for color and transform */
+}
+
+.navbar a:hover {
+  color: #007bff; /* Change color to blue on hover */
+  transform: scale(1.1); /* Grow in size by 10% on hover */
+}
+
+.home{
+  width: 700px
+}

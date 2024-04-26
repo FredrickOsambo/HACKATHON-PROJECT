@@ -1,0 +1,31 @@
+<!-- templates/about.html -->
+
+{% extends 'main.html' %}
+
+{% block title %}About - My Django Project{% endblock %}
+
+{% block content %}
+
+<h4>You need it? Here go</h4>
+
+<p>Reach us through the following handles</p>
+<a href="https://github.com/FredrickOsambo" target="_blank"> Fredrick Osambo @github</a>
+<a href="https://www.linkedin.com/in/fredrick-osambo-7a7892289/ " target="_blank"> Fredrick Osambo @linkedin</a>
+
+
+<h4><i>Welcome to our website, Please fill the form below to subcribe to our mailing service😊</i></h2>
+<form class="row g-3">
+  <div class="col-12">
+    <label for="name" class="form-label">Name</label>
+    <input type="text" class="form-control" id="name" placeholder="Fredrick Osambo">
+  </div>
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+  
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Subscribe</button>
+  </div>
+</form>.</p>
+{% endblock %}
